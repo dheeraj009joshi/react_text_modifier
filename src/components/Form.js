@@ -21,6 +21,11 @@ export default function Form() {
     
   };
 
+  const handCleaer = () => {
+    setText("");
+    
+  };
+
   return (
     <>
       <h1 style={{ textAlign: "center" }}>This Is Your Area</h1>
@@ -39,6 +44,9 @@ export default function Form() {
           </button>
           <button type="button" className="btn btn-primary mx-2 my-2 "onClick={handLowerCase} >
             LowerCase
+          </button>
+          <button type="button" className="btn btn-primary mx-2 my-2 "onClick={handCleaer} >
+            Clear
           </button>-
         </div>
         <div className="container">
